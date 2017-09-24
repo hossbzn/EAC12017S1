@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EAC12017S1</string>
+    <string name="nom_i_cognom">Nom i cognoms</string>
+    <string name="adreca">Adreça</string>
+    <string name="carrer">Carrer:</string>
+    <string name="cp">Codi Postal:</string>
+    <string name="poblacio">Poblacio:"</string>
+    <string name="dadesperso">Dades personals</string>
+    <string name="telefon">Telèfon:</string>
+    <string name="web">Pàgina web:</string>
+    <string name="nodefinit">Valor no definit</string>
+    <string name="activity_edicio_dades">Edita les dades</string>
+</resources>

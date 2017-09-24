@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="joseprieto.eac12017s1.MainActivity">
+
+    <TextView
+        android:id="@+id/viewCarrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adreça"
+        android:layout_alignStart="@+id/adreça"
+        android:layout_below="@+id/adreça"
+        android:text="@string/carrer"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nom_i_cognom"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editnom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cancela"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_alignRight="@+id/cancela"
+        android:layout_alignStart="@+id/nom"
+        android:layout_below="@+id/crea"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <ImageButton
+        android:id="@+id/crea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/nom"
+        android:layout_toRightOf="@+id/nom"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/cancela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editnom"
+        android:layout_alignTop="@+id/crea"
+        android:layout_toRightOf="@+id/crea"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/adreça"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editnom"
+        android:layout_alignStart="@+id/editnom"
+        android:layout_below="@+id/editnom"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/adreca"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/dadespersonals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewPoblacio"
+        android:layout_alignStart="@+id/viewPoblacio"
+        android:layout_below="@+id/cancelDades"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/dadesperso"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/codipostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carrer"
+        android:layout_alignStart="@+id/carrer"
+        android:layout_below="@+id/carrer"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nodefinit"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/cancela"
+        android:layout_alignRight="@+id/carrer"
+        android:layout_alignEnd="@+id/carrer" />
+
+    <TextView
+        android:id="@+id/carrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nodefinit"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_below="@+id/adreça"
+        android:layout_toRightOf="@+id/viewCP"
+        android:layout_toEndOf="@+id/viewCP" />
+
+    <TextView
+        android:id="@+id/poblacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/codipostal"
+        android:layout_alignStart="@+id/codipostal"
+        android:layout_below="@+id/codipostal"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nodefinit"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nodefinit"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_below="@+id/dadespersonals"
+        android:layout_alignLeft="@+id/poblacio"
+        android:layout_alignStart="@+id/poblacio" />
+
+    <TextView
+        android:id="@+id/editWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/nodefinit"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/viewWeb"
+        android:layout_alignBottom="@+id/viewWeb"
+        android:layout_toLeftOf="@+id/navega"
+        android:layout_alignLeft="@+id/telefon"
+        android:layout_alignStart="@+id/telefon" />
+
+    <Button
+        android:id="@+id/Envia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envia"
+        android:visibility="invisible"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/dadespersonals"
+        android:layout_alignStart="@+id/dadespersonals"
+        android:layout_alignRight="@+id/navega"
+        android:layout_alignEnd="@+id/navega" />
+
+    <ImageButton
+        android:id="@+id/Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelDades"
+        android:layout_alignTop="@+id/adreça"
+        android:layout_toRightOf="@+id/codipostal"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:onClick="onClickEdita"
+        android:src="@android:drawable/ic_menu_edit"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/cancelDades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/poblacio"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/carrer"
+        android:layout_toEndOf="@+id/codipostal"
+        android:layout_toRightOf="@+id/codipostal"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/truca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@android:drawable/stat_sys_phone_call"
+        android:visibility="invisible"
+        android:layout_above="@+id/editWeb"
+        android:layout_toRightOf="@+id/telefon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageButton
+        android:id="@+id/navega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@android:drawable/ic_menu_view"
+        android:visibility="invisible"
+        android:layout_below="@+id/telefon"
+        android:layout_toRightOf="@+id/telefon"
+        android:layout_alignBottom="@+id/viewWeb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/viewWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/web"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_below="@+id/telefon"
+        android:layout_alignLeft="@+id/dadespersonals"
+        android:layout_alignStart="@+id/dadespersonals"
+        android:layout_alignRight="@+id/viewPoblacio"
+        android:layout_alignEnd="@+id/viewPoblacio" />
+
+    <TextView
+        android:id="@+id/viewTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefon"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible"
+        android:layout_below="@+id/dadespersonals"
+        android:layout_alignLeft="@+id/viewWeb"
+        android:layout_alignStart="@+id/viewWeb" />
+
+    <TextView
+        android:id="@+id/viewPoblacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewCP"
+        android:layout_alignStart="@+id/viewCP"
+        android:layout_below="@+id/viewCP"
+        android:text="@string/poblacio"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/viewCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/codipostal"
+        android:layout_alignBottom="@+id/codipostal"
+        android:layout_alignLeft="@+id/viewCarrer"
+        android:layout_alignStart="@+id/viewCarrer"
+        android:text="@string/cp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:visibility="invisible" />
+</RelativeLayout>

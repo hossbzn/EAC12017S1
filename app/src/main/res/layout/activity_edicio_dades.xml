@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="joseprieto.eac12017s1.EdicioDades">
+
+    <RelativeLayout
+        android:layout_width="338dp"
+        android:layout_height="493dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <Button
+            android:id="@+id/btnAccepta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancela"
+            android:layout_alignBottom="@+id/btnCancela"
+            android:layout_toLeftOf="@+id/telefon"
+            android:layout_toStartOf="@+id/telefon"
+            android:text="ACCEPTA"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+        <Button
+            android:id="@+id/btnCancela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editWeb"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="41dp"
+            android:text="CANCEL·LA"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="28dp"
+            android:text="Carrer:"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editWeb"
+            android:layout_alignBottom="@+id/editWeb"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:text="Pàgina web"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/telefon"
+            android:layout_alignBottom="@+id/telefon"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:text="Telèfon:"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/poblacio"
+            android:layout_alignBottom="@+id/poblacio"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:text="Població:"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cp"
+            android:layout_alignBottom="@+id/cp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:text="Codi Postal"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/telefon"
+            android:layout_alignStart="@+id/telefon"
+            android:layout_below="@+id/telefon"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textWebEditText" />
+
+        <EditText
+            android:id="@+id/telefon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/poblacio"
+            android:layout_alignStart="@+id/poblacio"
+            android:layout_below="@+id/poblacio"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/poblacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cp"
+            android:layout_alignStart="@+id/cp"
+            android:layout_below="@+id/cp"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/carrer"
+            android:layout_alignStart="@+id/carrer"
+            android:layout_below="@+id/carrer"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/carrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="text" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
